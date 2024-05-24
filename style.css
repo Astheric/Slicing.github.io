@@ -1,0 +1,267 @@
+/* CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Navbar */
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(9, 9, 9);
+    padding: 15px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.judul {
+    font-size: 22px;
+    margin-left: 100px;
+
+}
+nav li a {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    padding: 20px;
+}
+
+nav li a::after {
+    content: '';
+    /* display: block; */
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    margin-left: -50px;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+nav li a:hover::after { 
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transform: scaleX(0.5);
+    transform: translate(5px 0);
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul {
+    margin-right: 100px;
+}
+
+/* Akhir Navbar */
+
+
+/* Section */
+.hero {
+    width: 100%;
+    height: 400px;
+    margin:auto;
+    background-image: url(img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    place-content: center;
+    filter: grayscale(0.5);
+}
+
+.hero .text {
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+    line-height: 40px;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition:all ease-in 0.5s;
+}
+/* Akhir Hero Section */
+
+
+/* Icon */
+.container-icon{
+    width: 800px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: space-around;
+    padding-top: 30px;
+    justify-items: center;
+    text-align: center;
+}
+.circle {
+    width: 55px;
+    height: 50px;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 50%;
+    object-fit: contain;
+    
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+/* Akhir Icon */
+.col {
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+section {
+    background-color: rgb(247, 244, 244);
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+.container-FC {
+    width: 800px;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.fiturconten {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+    width: 200px;
+    margin: auto;
+}
+
+.container-FC img {
+    width: 800px;
+    height: 450px;
+    padding-top: 30px;
+} 
+/* bekas yudi */
+
+
+.gambar-content {
+    height: 150px;
+    width: 130px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.third-section  {
+    /* width: 800px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns:350px 350px ;
+    justify-content: space-between; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    background-color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+}
+.kolom  {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.container-content {
+    width: 200px;
+    text-align: center;
+}
+
+h2  {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid aqua;
+    width: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+p   {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+button  {
+    background-color: white;
+    color: black;
+    border: 1px solid aqua;
+    
+}
+
+button:hover {
+    background-color: aqua;
+    filter: drop-shadow(5px 5px 5px rgb(96, 203, 203) );
+    transition: 0.2s ;
+}
